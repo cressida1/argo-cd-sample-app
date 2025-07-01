@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-world
-  namespace: sample-app  # 🔧 Add this line
+  namespace: sample-app
 spec:
   replicas: 1
   selector:

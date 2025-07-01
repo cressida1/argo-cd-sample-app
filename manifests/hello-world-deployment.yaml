@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: hello-world
+  name: hello-world
+  namespace: your-namespace  # 🔧 Add this line
 spec:
-replicas: 1
-selector:
-matchLabels:
-app: hello-world
-template:
-metadata:
-labels:
-app: hello-world
-spec:
-containers:
-— name: hello-world
-image: nginx:latest
-ports:
-— containerPort: 80
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+        - name: hello-world
+          image: nginx:latest
+          ports:
+            - containerPort: 80

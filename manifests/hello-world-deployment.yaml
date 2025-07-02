@@ -18,4 +18,4 @@ spec:
         - name: hello-world
           image: hashicorp/http-echo
           ports:
-            - containerPort: 80
+            - containerPort: 5678

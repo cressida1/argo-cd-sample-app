@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: nginx:1.19
+          #image: nginx:latest
+          image: hashicorp/http-echo
           ports:
             - containerPort: 80

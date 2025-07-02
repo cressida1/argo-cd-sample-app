@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: hashicorp/http-echo
+          image: nginx:latest
           ports:
-            - containerPort: 5678
+            - containerPort: 80

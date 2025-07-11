@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: platform-sample-app
-          image: nginx:latestghgh
+          image: nginx:latest
           ports:
             - containerPort: 80
